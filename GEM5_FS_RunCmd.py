@@ -30,7 +30,7 @@ for i in benchmarks:
             
             # running the simulation --> CHANGE
             cmd = ("./build/ARM/gem5.opt --stats-file={}_75M_100G.txt configs/example/fs.py --caches --l1i_size=32kB --l1i_assoc=4 --l1d_size=32kB --l1d_assoc=4 \
-            --cacheline_size=64 --cpu-clock=2GHz --mem-size=256MB --cpu-type=arm_detailed --l1d_ret={} --l1i_ret={} --maxinsts=1000000000 \
+            --l2_size=128KB  --l2_assoc=8 --cacheline_size=64 --cpu-clock=2GHz --mem-size=256MB --cpu-type=arm_detailed --l1d_ret={} --l1i_ret={} --maxinsts=1000000000 \
             --script={} --disk-image=/home/gauravs/asimbench/disks/ARMv7a-ICS-Android.SMP.Asimbench-v3.img \
             --machine-type=RealView_PBX --os-type=android-ics -F 5000000000").format(i, dret,iret,script)
 	
@@ -54,3 +54,5 @@ for i in benchmarks:
 
 ./build/ARM/gem5.opt --stats-file=360buy.rcs_75M_100G.txt configs/example/arm/starter_fs.py --caches --l1i_size=32kB --l1i_assoc=4 --l1d_size=32kB --l1d_assoc=4 --cacheline_size=64 --cpu-freq=2GHz --mem-size=256MB --cpu=hpi --l1d_ret=50M --l1i_ret=1G --maxinsts=1000000000 --script=/home/gauravs/Kyle_gem5/gem5_tlb/asimbench/boot/360buy.rcs --disk-image=ARMv7a-ICS-Android.SMP.Asimbench-v3.img --os_type=android-ics -F 5000000000
 '''
+# write cycles
+
