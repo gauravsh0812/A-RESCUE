@@ -1,15 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jan 22 12:33:46 2020
-
-@author: gaura
-"""
-
 import pandas as pd
 from openpyxl import Workbook
 book = Workbook()
 sheet = book.active
-
 
 arr = ['10us', '26us', '50us', '75us', '1ms']
 
