@@ -1,17 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 25 12:13:32 2020
 
-@author: gaura
-"""
 import pandas as pd 
 import matplotlib.pyplot as plt
 import matplotlib
 plt.style.use('ggplot')
 applications = {'astar':2, 'bwaves':10, 'bzip2':18, 'gamess':3, 'gromacs':7, 'patricia':1, 'soplex':7, 'tonto':2, 'zeusmp':1}
-
-
-#fig1 = plt.figure(figsize=(15, 15))
 
 for index, app in  enumerate(list(applications.keys())):
     
@@ -54,7 +46,4 @@ for index, app in  enumerate(list(applications.keys())):
     #ax2.tick_params(axis='y', labelcolor=color)
     ax2.ticklabel_format(style='sci', axis='y', scilimits=(0,0))
 '''
-   # fig1.tight_layout()
 
-#plt.title('Para-optimal curve')
-#plt.savefig('Para-optimal curve')
