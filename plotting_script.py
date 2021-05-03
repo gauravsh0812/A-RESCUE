@@ -21,24 +21,5 @@ for i in range(1,9):
     #plt.title('phase-{}_bzip_SPEC_data'.format(i))
     plt.show()
     plt.savefig('{}_retTime_energy_lat_plots'.format(file))
-  
-'''   
-    plt.figure(2)
-    plt.subplot(2,2,i)
-    plt.plot(t,x,'red')                                  #ret_time v/s nor_lat
-    plt.plot(t,y,'green')                                #ret_time v/s nor_energy
-    plt.show()
-    plt.savefig('{}_EnergyvsLat_plots'.format(file))'''
-plt.legend()
 
-
-
-
-'''df_2 = df.loc[df['phase no.'] == 1]
-
-df_2 = df_2.iloc[:,[1,2,4,5]]
-x2 = df_2.iloc[:,2]
-y2 = df_2.iloc[:,3]
-
-plt.plot(x2,y2)'''
-
+    plt.legend()
